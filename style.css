@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/513/292/11/gradient-abstract-hd-4k-wallpaper-preview.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.all {
+    width: 95%;
+    min-height: calc(100vh - 140px);
+    margin: auto;
+    background-color: black;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.home {
+    min-height: calc((100vh - 140px) - 68.75px);
+    display: grid;
+    padding-left: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 700px) {
+    .all {
+        position: relative;
+        top: 0px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 40px;
+    }
+
+    .home .right {
+        display: none;
+    }
+
+    .home>section {
+        z-index: 2;
+    }
+}
+
+.home>section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.home .left h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.home .left p {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.home .right img {
+    width: 100%;
+}
+
+.all .b {
+    background: #11998e;
+    /*fallbackforoldbrowsers*/
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /*Chrome10-25,Safari5.1-6*/
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+}
+
+.all .r {
+    background: #00f260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575e6, #d4005f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575e6, #d4005f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.all>span {
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+
+}
+
+.all>span:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
